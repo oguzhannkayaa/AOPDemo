@@ -1,0 +1,143 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "PostSharp/4.2.17": {
+        "type": "package",
+        "compile": {
+          "lib/net35-client/PostSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net35-client/PostSharp.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "PostSharp": "4.2.17"
+        },
+        "compile": {
+          "bin/placeholder/Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PostSharp/4.2.17": {
+      "sha512": "b7THtwQmAxkDwo5+AGIE6mysPx8QY/v2rV6yxfh8ByWkidZ70V5Ssy1sqIK9ao4wMec2T3r1obUGxrR/lpIf2A==",
+      "type": "package",
+      "path": "postsharp/4.2.17",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net35-client/PostSharp.dll",
+        "lib/net35-client/PostSharp.xml",
+        "lib/portable-net4+sl5+netcore45+wpa81+wp8/PostSharp.dll",
+        "lib/portable-net4+sl5+netcore45+wpa81+wp8/PostSharp.xml",
+        "postsharp.4.2.17.nupkg.sha512",
+        "postsharp.nuspec",
+        "tools/PostSharp-Tools.exe",
+        "tools/PostSharp.MSBuild.v4.2.17.Release.dll",
+        "tools/PostSharp.Version.properties",
+        "tools/PostSharp.properties",
+        "tools/PostSharp.targets",
+        "tools/PostSharp.tasks",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
+      ]
+    },
+    "Core/1.0.0": {
+      "type": "project",
+      "path": "../Core/Core.csproj",
+      "msbuildProject": "../Core/Core.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "Core >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\user\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\user\\source\\repos\\AOPDemo\\AOPDemo.Entities\\AOPDemo.Entities.csproj",
+      "projectName": "AOPDemo.Entities",
+      "projectPath": "C:\\Users\\user\\source\\repos\\AOPDemo\\AOPDemo.Entities\\AOPDemo.Entities.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\user\\source\\repos\\AOPDemo\\AOPDemo.Entities\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "C:\\Users\\user\\source\\repos\\AOPDemo\\Core\\Core.csproj": {
+              "projectPath": "C:\\Users\\user\\source\\repos\\AOPDemo\\Core\\Core.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "'PostSharp 4.2.17' paketi, proje hedef çerçevesi 'net6.0' yerine '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' kullanılarak geri yüklendi. Bu paket projenizle tamamen uyumlu olmayabilir.",
+      "libraryId": "PostSharp",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
+}
